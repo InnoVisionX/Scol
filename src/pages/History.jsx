@@ -30,6 +30,7 @@ const HistoryPage = () => {
 
   const onFilterChange = (days) => {
     const filterValue = getExpiredDaysAgo(rawExpiredSurveys, days);
+
     setFilteredSurveys(filterValue);
   };
 
@@ -62,7 +63,7 @@ const HistoryPage = () => {
         </div>
       </div>
 
-      {filteredSurveys.length > 0 && <History surveys={filteredSurveys} />}
+      <History surveys={filteredSurveys} />
     </div>
   );
 };
