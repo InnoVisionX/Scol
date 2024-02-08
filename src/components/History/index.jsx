@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const History = ({ surveys }) => {
+  console.log(surveys.length);
   return (
     <div className="mt-0">
       <div>
